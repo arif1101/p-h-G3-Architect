@@ -80,12 +80,10 @@ button{
 
 /* main section */
 section{
-    padding: 240px;
+    padding: 20px 200px;
 }
 .teams__container {
-    
     display: flex;
-    
 }
 
 .teams__img__container{
@@ -122,3 +120,31 @@ section{
     font-weight: 400;
 }
 
+
+
+
+/* responsive */
+
+@media screen and (max-width: 576px){
+    nav,
+    .teams__container{
+        flex-direction: column;
+    }
+
+    .teams__content{
+        margin: auto;
+        justify-content: center;
+    }
+    .teams__img__container{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        padding: 20px;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+}
